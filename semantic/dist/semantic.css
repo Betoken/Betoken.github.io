@@ -759,6 +759,27 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
          Site Overrides
 *******************************/
 
+.preheader {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  background: #002B49;
+  padding-bottom: 0!important;
+}
+
+.preheader-content-box {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.preheader-content-box-text {
+  padding: 8px 16px;
+  color: white;
+}
+
 .header-menu {
   padding-top: 16px!important;
 }
@@ -803,7 +824,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .bg-green.footer {
   background-position: center 111px;
   background-repeat: no-repeat;
-  padding-bottom: 0px;
+  padding-bottom: 48px;
   margin: -266px 0 0px;
   padding-top: 370px;
   min-height: 890px;
@@ -824,6 +845,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .bg-pattern-lines {
   position: relative;
   width: 100%;
+  top: 48px;
   background-image: url('themes/default/assets/images/bg-pattern-lines.svg');
   background-position: top right;
   background-repeat: no-repeat;
@@ -5217,7 +5239,8 @@ input.form-control {
 *******************************/
 
 .ui.massive.button.primary,
-.ui.massive.button.primary.white {
+.ui.massive.button.primary.white,
+.ui.massive.button.green {
   font-size: 0.875rem;
   line-height: 65px;
   padding: 0 2rem;

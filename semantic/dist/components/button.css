@@ -3687,7 +3687,8 @@
 *******************************/
 
 .ui.massive.button.primary,
-.ui.massive.button.primary.white {
+.ui.massive.button.primary.white,
+.ui.massive.button.green {
   font-size: 0.875rem;
   line-height: 65px;
   padding: 0 2rem;
