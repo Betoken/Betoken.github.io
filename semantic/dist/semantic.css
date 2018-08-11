@@ -818,7 +818,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   padding-bottom: 140px;
   margin: -180px 0 64px;
   padding-top: 301px;
-  min-height: 820px;
+  min-height: 870px;
 }
 
 .bg-green.footer {
@@ -839,7 +839,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   background-repeat: no-repeat;
   margin: 64px 0 64px;
   padding-top: 292px;
-  min-height: 825px;
+  min-height: 870px;
 }
 
 .bg-pattern-lines {
