@@ -1,0 +1,500 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Regular-webfont.woff') format('woff'), url('../fonts/Roboto/Roboto-Regular-webfont.ttf') format('truetype'), url('../fonts/Roboto/Roboto-Regular-webfont.svg#Roboto-Regular-webfont') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto/Roboto-Medium-webfont.eot');
+    src: url('../fonts/Roboto/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Medium-webfont.woff') format('woff'), url('../fonts/Roboto/Roboto-Medium-webfont.ttf') format('truetype'), url('../fonts/Roboto/Roboto-Medium-webfont.svg#Roboto-Medium-webfont') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold-webfont.eot');
+    src: url('../fonts/Roboto/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Bold-webfont.woff') format('woff'), url('../fonts/Roboto/Roboto-Bold-webfont.ttf') format('truetype'), url('../fonts/Roboto/Roboto-Bold-webfont.svg#Roboto-Bold-webfont') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #22C88A !important;
+  font-family: 'Roboto-Regular' !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #22C88A !important;
+  font-family: 'Roboto-Regular' !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #22C88A !important;
+  font-family: 'Roboto-Regular' !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #22C88A !important;
+  font-family: 'Roboto-Regular' !important;
+}
+
+body {
+    font-family: 'Roboto-Regular';
+    -webkit-tap-highlight-color: inherit;
+    background-color: #fff;
+    color: #8FA9B0;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 66px;
+    color: #002B49;
+    font-family: 'Roboto-Regular';
+}
+
+h2 {
+    font-family: 'Roboto-Regular';
+    color: #002B49;
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #002B49;
+    font-family: 'Roboto-Regular';
+}
+
+h4 {
+    font-size: 14px;
+    color: #002B49;
+    font-family: 'Roboto-Regular';
+}
+
+h5{
+    font-size: 24px;
+    font-family: 'Roboto-Regular';
+    color: #002B49;
+}
+
+p{
+    margin-bottom: 0px !important;
+}
+
+b{
+    font-family: 'Roboto-Bold';
+}
+
+textarea:focus, input:focus , button:focus ,select:focus {
+  outline: none !important;
+}
+
+button{
+    cursor: pointer;
+}
+
+.logo{
+    width:180px !important;
+}
+
+
+
+.carousel-indicators{
+    width: 100%;
+    justify-content: flex-start !important;
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
+    margin: 0 !important;
+    
+}
+
+.carousel-indicators li {
+       display: inline-block;
+       width: 20px;
+       height: 5px;
+       border: transparent;
+       border-radius: 10px;
+       margin: 10px;
+       text-indent: 0;
+       cursor: pointer;
+       background-color: #d1dcdf;
+}
+
+.carousel-indicators .active {
+            width: 25px;
+            height: 5px;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: #002b49;
+}
+
+
+.telegram {
+    color: #08c !important;
+}
+
+.facebook {
+    color: #3b5998 !important;
+}
+
+.reddit {
+    color: #ff4500 !important;
+}
+
+.twitter {
+    color: #1da1f2 !important;
+}
+
+.gitHub {
+    color: #FFFFFF !important;
+}
+
+.linkedin {
+    color: #0084bf !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: inherit !important ;
+  }
+
+a:hover{
+    text-decoration: none !important;
+  }
+
+select{
+    cursor: pointer;
+  }
+
+iframe{display: none !important;}
+
+.pointer{
+    cursor: pointer !important;
+  }
+
+.bg-white{
+    background-color: #FFFFFF !important;
+  }
+
+.bg-dark {
+    background-color: #343a40!important;
+}
+
+.black-font{
+    color: #000000 !important;
+  }
+
+.betoken-font{
+    color: #8FA9B0 !important;
+  }
+
+.white-font{
+    color: #FFFFFF !important;
+  }
+
+.green-font{
+    color: #22C88A !important;
+}
+
+.font-12{
+    font-size: 12px !important; 
+}
+
+.font-18{
+  font-size: 18px !important;   
+}
+
+.divider{
+  border-top: 2px solid #002B49;
+  border-bottom: 2px solid #002B49;
+  width: 100px;
+  height: 1px;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.divider.active{
+    border-top: 2px solid #FFFFFF !important;
+    border-bottom: 2px solid #FFFFFF !important;
+}
+
+.spliter{
+  border-top: 1px solid #002B49;
+  border-bottom: 1px solid #002B49;
+  width: 20px;
+  height: 1px;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.connector{
+    border-bottom: 0.5px dashed #002B49;
+    position: absolute;
+    height: 1px;
+    line-height: 1;
+    width: 100%;
+}
+
+.line-2{
+    line-height: 2 !important;
+}
+
+.line-1{
+    line-height: 1.25 !important;
+}
+
+.dot{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #47E6B1;
+}
+
+.stage-icon{
+    background: #002B49;
+    border: 1px solid #002B49;
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.flow-list p::before {
+    content:"• ";
+    color: #47e6b1;
+    font-size:2em;
+    position: relative;
+    top: 0.2em;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    line-height: 1;
+}
+
+
+.cards{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    padding: 15px;
+  }
+
+
+.outline-button{
+    font-family: 'MavenProMedium' !important;
+    font-size: 14px;
+    background: #FFFFFF;
+    border: 1px solid #D1DCDF;
+    border-radius: 4px;
+    padding: 10px;
+    line-height: normal;
+    outline: none !important;
+    min-width: 100px;
+}
+
+.outline-button.active{
+    background-color:  #18DAA3;
+    border-color: #18DAA3;
+    color: #FFFFFF;
+}
+
+.outline-box{
+  border: 1px solid #D1DCDF !important;
+  padding: 15px 10px;
+}
+
+.emailer-box{
+    display: -webkit-box !important;
+    width: max-content;
+    border: 1px solid #D1DCDF !important;
+    padding: 10px;
+}
+
+.rectangle-button{
+    /*background: linear-gradient(90deg, #1CC886 0%, #1BF2A0 146.76%);*/
+    background-color: #002B49;
+    border-radius: 2px;
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.circular-button{
+  cursor: pointer;
+  border-radius: 100px;
+  background: #fff;
+  color: rgba(0, 0, 0, .6)!important;
+  font-weight: 400;
+  text-transform: none;
+  text-align: center;
+  padding: 20px;
+  height: 20px;
+  width: 20px;
+  box-shadow: 0 10px 25px 0 rgba(0,0,0,.25);
+}
+
+.curved-button{
+  cursor: pointer;
+  font-size: 18px;
+  padding: 20px;
+  background-color: #fff;
+  color: rgba(0,0,0,.87);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.07), 0px 0px 35px rgba(50, 50, 93, 0.1);
+  border-radius: 36px;
+}
+
+.curved-button.activerht{
+    background-color: #1CC886;
+    color: #fff !important;
+    margin-right: -25px !important;
+    z-index: 999;
+}
+
+.curved-button.activelft{
+    background-color: #1CC886;
+    color: #fff !important;
+    margin-left: -25px !important;
+    z-index: 999;
+}
+
+.curved-button:hover{
+      background-color: #1CC886;
+      color: #fff !important;
+    }
+
+.top-section{
+            background-image: url('../images/bg-pattern.png');
+            background-repeat: no-repeat;     
+            background-position: right top;   
+}
+
+.top-section .full-sec .launch{ margin-bottom: -40px;}
+
+.work-flow-section{
+            background-image: url('../images/workflow.png');
+            background-repeat: no-repeat;     
+            background-position: right top;
+}
+
+.guthub-code-section{
+            position: relative;
+            width: 100%;
+            margin: -60px 0 0;
+            min-height: 650px;
+            background-image: url('../images/Vector.png');
+            background-repeat: no-repeat;     
+            background-position: center top;     
+            background-size: cover;
+}
+
+.guthub-code-section .code-explanation{
+                    position: absolute;
+                    right: 100px;
+                    top:160px;
+                    color: #fff !important;
+}
+
+.guthub-code-section .code-illustration{
+     position: absolute;
+     bottom: 0;
+}
+
+.inteligence-section{
+            background-image: url('../images/artificial_intelligence.png');
+            background-repeat: no-repeat;     
+            background-position: left top;
+}
+
+.share-div{
+            background-image: url('../images/bg-pattern-bottom.png');
+            background-repeat: no-repeat;     
+            background-position: right top;     
+}
+
+footer{ 
+    font-size: 14px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (min-width:320px) and (max-width: 480px) {
+   
+    
+    .guthub-code-section{
+        background-image: none !important;
+        background-color: #282d35;
+        min-height: 450px !important;
+        margin: 0 !important;
+    }
+} 
+
+@media (min-width:480px) and (max-width: 780px) {
+    
+    .guthub-code-section{
+        background-image: none !important;
+        background-color: #282d35;
+        min-height: 300px !important;
+        margin: 0 !important;
+    }
+    
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    h2{
+        font-size: 34px !important;
+        line-height: 1 !important;
+    }
+    
+    .carousel-indicators{
+        justify-content: center !important;
+    }
+    
+    .top-section{
+        background-image: none !important;
+    }
+    
+    .top-section .full-sec .launch{ 
+        text-align: center !important;
+        margin-top: 5px;
+        margin-bottom: 0px !important;
+    }
+    
+    .inteligence-section{
+        background-image: none !important;
+    }
+    
+    .share-div{
+        background-image: none !important;   
+    }
+    
+    .work-flow-section{
+        background-image: none !important;
+    }
+    
+    
+    .guthub-code-section .code-explanation{
+        right: 0 !important;
+        top: 30px !important;
+    }
+    
+    .guthub-code-section .code-illustration  .code-link{
+        margin-bottom: -20px;
+    } 
+    
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

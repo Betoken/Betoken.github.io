@@ -1,5 +1,0 @@
-/*******************************
-    User Variable Overrides
-*******************************/
-/* List Item */
-@itemVerticalPadding: @relative8px;
