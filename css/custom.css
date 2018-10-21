@@ -44,7 +44,7 @@ body {
     -webkit-tap-highlight-color: inherit;
     background-color: #fff;
     color: #8FA9B0;
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 h1 {
@@ -72,13 +72,10 @@ h4 {
 }
 
 h5{
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Roboto-Regular';
     color: #002B49;
-}
-
-p{
-    margin-bottom: 0px !important;
+    font-weight: 600;
 }
 
 b{
@@ -106,7 +103,7 @@ button{
     bottom: -40px;
     left: 10px;
     margin: 0 !important;
-    
+
 }
 
 .carousel-indicators li {
@@ -156,7 +153,6 @@ button{
 
 a{
     text-decoration: none !important;
-    color: inherit !important ;
   }
 
 a:hover{
@@ -198,11 +194,11 @@ iframe{display: none !important;}
 }
 
 .font-12{
-    font-size: 12px !important; 
+    font-size: 12px !important;
 }
 
 .font-18{
-  font-size: 18px !important;   
+  font-size: 18px !important;
 }
 
 .divider{
@@ -212,6 +208,7 @@ iframe{display: none !important;}
   height: 1px;
   margin-top: 1.5rem;
   line-height: 1;
+  border-radius: 4px;
 }
 
 .divider.active{
@@ -226,10 +223,11 @@ iframe{display: none !important;}
   height: 1px;
   margin-top: 1.5rem;
   line-height: 1;
+  z-index: 2;
 }
 
 .connector{
-    border-bottom: 0.5px dashed #002B49;
+    border-bottom: 2px dashed #D1DCDF;
     position: absolute;
     height: 1px;
     line-height: 1;
@@ -260,6 +258,8 @@ iframe{display: none !important;}
     font-size: 12px;
     text-align: center;
     color: #FFFFFF;
+    line-height: 22px;
+    z-index: 2;
 }
 
 .flow-list p::before {
@@ -307,22 +307,29 @@ iframe{display: none !important;}
 
 .emailer-box{
     display: -webkit-box !important;
-    width: max-content;
     border: 1px solid #D1DCDF !important;
-    padding: 10px;
+    border-radius: 4px;
+    padding: 6px 8px;
+    width: max-content;
+}
+
+.emailer-box input{
+    height: 36px;
+    border:none;
 }
 
 .rectangle-button{
-    /*background: linear-gradient(90deg, #1CC886 0%, #1BF2A0 146.76%);*/
+    height: 36px;
     background-color: #002B49;
-    border-radius: 2px;
+    border-radius: 4px;
     font-weight: 400;
     text-transform: none;
     text-align: center;
     color: #fff;
     font-size: 14px;
-    padding: 10px;
+    padding: 0 12px;
     cursor: pointer;
+    border: none;
 }
 
 .circular-button{
@@ -339,114 +346,122 @@ iframe{display: none !important;}
   box-shadow: 0 10px 25px 0 rgba(0,0,0,.25);
 }
 
+.curved-button-group{
+  z-index: 9999;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: white;
+  border: 0.5px solid #D0D0D0;
+  border-radius: 36px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.07), 0px 18px 35px rgba(50, 50, 93, 0.1);
+}
 .curved-button{
   cursor: pointer;
-  font-size: 18px;
-  padding: 20px;
-  background-color: #fff;
-  color: rgba(0,0,0,.87);
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.07), 0px 0px 35px rgba(50, 50, 93, 0.1);
-  border-radius: 36px;
+  min-height: 48px;
+  border-radius: 36px!important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .curved-button.activerht{
     background-color: #1CC886;
     color: #fff !important;
-    margin-right: -25px !important;
     z-index: 999;
+}
+.curved-button.activerht:hover{
+    color: #fff !important;
 }
 
 .curved-button.activelft{
     background-color: #1CC886;
     color: #fff !important;
-    margin-left: -25px !important;
     z-index: 999;
 }
 
 .curved-button:hover{
-      background-color: #1CC886;
-      color: #fff !important;
+      color: #002B49 !important;
     }
-
-.top-section{
-            background-image: url('../images/bg-pattern.png');
-            background-repeat: no-repeat;     
-            background-position: right top;   
-}
 
 .top-section .full-sec .launch{ margin-bottom: -40px;}
 
 .work-flow-section{
-            background-image: url('../images/workflow.png');
-            background-repeat: no-repeat;     
+            background-image: url('../images/workflow.svg');
+            background-repeat: no-repeat;
             background-position: right top;
 }
 
-.guthub-code-section{
+.github-code-section{
             position: relative;
             width: 100%;
             margin: -60px 0 0;
-            min-height: 650px;
-            background-image: url('../images/Vector.png');
-            background-repeat: no-repeat;     
-            background-position: center top;     
+            min-height: 750px;
+            background-image: url('../images/vector.svg');
+            background-repeat: no-repeat;
+            background-position: center top;
             background-size: cover;
 }
 
-.guthub-code-section .code-explanation{
+.github-code-section .code-explanation{
                     position: absolute;
                     right: 100px;
                     top:160px;
                     color: #fff !important;
 }
 
-.guthub-code-section .code-illustration{
+.github-code-section .code-illustration{
      position: absolute;
      bottom: 0;
 }
 
 .inteligence-section{
-            background-image: url('../images/artificial_intelligence.png');
-            background-repeat: no-repeat;     
+            background-image: url('../images/artificial_intelligence.svg');
+            background-repeat: no-repeat;
             background-position: left top;
 }
 
 .share-div{
-            background-image: url('../images/bg-pattern-bottom.png');
-            background-repeat: no-repeat;     
-            background-position: right top;     
+            background-image: url('../images/bg-pattern.svg');
+            background-repeat: no-repeat;
+            background-position: right top;
+}
+.managepage{
+            background-image: url('../images/bg-pattern.svg');
+            background-repeat: no-repeat;
+            background-position: right top;
 }
 
-footer{ 
+.carousel-inner{
+  min-height: 220px;
+}
+footer{
     font-size: 14px;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media (min-width:320px) and (max-width: 480px) {
-   
-    
-    .guthub-code-section{
-        background-image: none !important;
-        background-color: #282d35;
-        min-height: 450px !important;
-        margin: 0 !important;
+
+    .github-code-section{
+        background-position-x: -900px;
+        min-height: 750px;
     }
-} 
+}
 
 @media (min-width:480px) and (max-width: 780px) {
-    
-    .guthub-code-section{
-        background-image: none !important;
-        background-color: #282d35;
-        min-height: 300px !important;
-        margin: 0 !important;
+
+    .github-code-section{
+        background-position-x: -908px;
+        min-height: 650px;
     }
-    
+
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...} 
+@media only screen and (min-width: 600px) {...}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -454,47 +469,50 @@ footer{
         font-size: 34px !important;
         line-height: 1 !important;
     }
-    
+
+    .managepage{
+                background-image: none;
+    }
     .carousel-indicators{
         justify-content: center !important;
     }
-    
+
     .top-section{
         background-image: none !important;
     }
-    
-    .top-section .full-sec .launch{ 
+
+    .top-section .full-sec .launch{
         text-align: center !important;
         margin-top: 5px;
         margin-bottom: 0px !important;
     }
-    
+
     .inteligence-section{
         background-image: none !important;
     }
-    
+
     .share-div{
-        background-image: none !important;   
+        background-image: none !important;
     }
-    
+
     .work-flow-section{
         background-image: none !important;
     }
-    
-    
-    .guthub-code-section .code-explanation{
+
+
+    .github-code-section .code-explanation{
         right: 0 !important;
-        top: 30px !important;
     }
-    
-    .guthub-code-section .code-illustration  .code-link{
+
+    .github-code-section .code-illustration  .code-link{
         margin-bottom: -20px;
-    } 
-    
-} 
+    }
+
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...} 
+@media only screen and (min-width: 992px) {...}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
