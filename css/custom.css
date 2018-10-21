@@ -311,6 +311,7 @@ iframe{display: none !important;}
     border-radius: 4px;
     padding: 6px 8px;
     width: max-content;
+    width: -moz-max-content;
 }
 
 .emailer-box input{
