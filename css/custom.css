@@ -457,6 +457,10 @@ iframe{display: none !important;}
 footer{
     font-size: 14px;
 }
+.profil-pic{
+  border-radius: 27px;
+  min-height: 54px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media (min-width:320px) and (max-width: 480px) {
