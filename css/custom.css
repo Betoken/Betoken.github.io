@@ -90,6 +90,22 @@ button{
     cursor: pointer;
 }
 
+.preheader-container{
+  min-height: 48px;
+  background-color: #22C88A;
+}
+.preheader-content{
+  position: relative;
+  margin: 0 auto;
+  max-width: 490px;
+  padding: 0 24px;
+}
+.preheader-content p{
+  margin-bottom: 0;
+  line-height: 48px;
+  color: white;
+  text-align: center;
+}
 .logo{
     width:180px !important;
 }
@@ -507,6 +523,10 @@ footer{
 
     .github-code-section .code-illustration  .code-link{
         margin-bottom: -20px;
+    }
+    .preheader-content p{
+      padding: 8px 16px;
+      line-height: 24px;
     }
 
 }
