@@ -322,21 +322,28 @@ iframe{display: none !important;}
 }
 
 .emailer-box{
-    display: -webkit-box !important;
     border: 1px solid #D1DCDF !important;
     border-radius: 4px;
     padding: 6px 8px;
-    width: max-content;
-    width: -moz-max-content;
+    width: auto;
+    width: auto;
 }
 
 .emailer-box input{
     height: 36px;
     border:none;
+    width: 75%;
+    display: inline-block;
 }
-
+.input-group-append{
+    margin-left: 0;
+    display: inline-block;
+    width: 23%;
+    position: relative;
+}
 .rectangle-button{
     height: 36px;
+    display: inline-block;
     background-color: #002B49;
     border-radius: 4px;
     font-weight: 400;
