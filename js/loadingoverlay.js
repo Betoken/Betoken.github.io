@@ -46,12 +46,12 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         customResizeFactor      : 1,
         customOrder             : 3,
         // Text
-        text                    : "",
+        text                    : "Wait 10s. Please be patient <3",
         textAnimation           : "",
-        textAutoResize          : true,
-        textResizeFactor        : 0.5,
-        textColor               : "#202020",
-        textClass               : "",
+        textAutoResize          : false,
+        textResizeFactor        : 0.3,
+        textColor               : "#002B49",
+        textClass               : "betoken-value mb-5",
         textOrder               : 4,
         // Progress
         progress                : false,
