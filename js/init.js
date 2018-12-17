@@ -4,8 +4,8 @@ $(document).ready(() => {
     });
     window.getROI().then((result) => {
         // 4 decimals
-        $("#1-month-roi").text(`${result.btk1MonthROI - result.btk1MonthROI % 0.0001}`);
-        $("#inception-roi").text(`${result.btkInceptionROI - result.btkInceptionROI % 0.0001}`);
+        $("#1-month-roi").text(`${Math.round(result.btk1MonthROI * 10000) / 10000}`);
+        $("#inception-roi").text(`${Math.round(result.btkInceptionROI * 10000) / 10000}`);
 
         var timestamps = [];
         for (var i = 0; i < result.timestamps.length; i++) {
