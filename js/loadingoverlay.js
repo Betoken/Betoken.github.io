@@ -46,7 +46,7 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         customResizeFactor      : 1,
         customOrder             : 3,
         // Text
-        text                    : "Wait 10s. Please be patient <3",
+        text                    : "This will take ~10s. Please be patient <3",
         textAnimation           : "",
         textAutoResize          : false,
         textResizeFactor        : 0.3,
