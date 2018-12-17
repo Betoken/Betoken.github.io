@@ -72,26 +72,52 @@
       <img src="images/BetokenLogo.svg" class="logo m-auto">
     </div>
     <section class="row mb-lg-5 mt-sm-3">
-    <div class="left-sec col-lg-6 col-md-12 pb-lg-5 pt-lg-5 pl-lg-0">
-      <h2 class="text-center d-lg-none">Become a fund manager <br> in one click.</h2>
-      <h2 class="d-none d-lg-block">Become a fund manager <br> in one click.</h2>
-      <img src="images/macbook.svg" class="mt-4 mb-2 d-lg-none" width="100%">
-      <div class="flow-list pl-5 pb-lg-4 pt-4 pb-4">
-        <p class="font-18 ml-2 d-inline-block line-1">They said you needed <b>"qualifications"</b> to make videos… <br>
-          Then <b>YouTube</b> happened.</p>
-          <p class="font-18 ml-2 d-inline-block line-1">They said you needed <b>"qualifications"</b> to make news… <br>
-            Then <b>social media</b> happened.</p>
-            <p class="font-18 ml-2 d-inline-block line-1">They said you needed <b>"qualifications"</b> to make investments… <br>
-              Then <b>Betoken</b> happened.
-            </p>
+      <div class="left-sec col-lg-6 col-md-12 pb-lg-5 pt-lg-5 pl-lg-0">
+        <h2 class="text-center d-lg-none">Become a fund manager <br> in one click.</h2>
+        <h2 class="d-none d-lg-block">Become a fund manager <br> in one click.</h2>
+        <div class="flow-list pl-5 pb-lg-4 pt-4 pb-4">
+          <p class="font-18 ml-2 d-inline-block line-1">They said you needed <b>"qualifications"</b> to make videos… <br>
+            Then <b>YouTube</b> happened.</p>
+            <p class="font-18 ml-2 d-inline-block line-1">They said you needed <b>"qualifications"</b> to make news… <br>
+              Then <b>social media</b> happened.</p>
+              <p class="font-18 ml-2 d-inline-block line-1">They said you needed <b>"qualifications"</b> to make investments… <br>
+                Then <b>Betoken</b> happened.
+              </p>
           </div>
           <a class="btn btn-primary btn-lg btn-block d-lg-none mb-4" href="https://betoken.fund/iao/">BECOME A FUND MANAGER</a>
           <a class="btn btn-primary btn-lg btn-block d-lg-block d-none mb-4" href="https://betoken.fund/iao/">BECOME A FUND MANAGER</a>
           <p>Already have Kairo tokens? <a href="https://betoken.fund/portal/" target="_blank">LAUNCH BETA</a></p>
-          <!--End mc_embed_signup-->
         </div>
-        <div class="right-sec col-lg-6 text-center d-none d-lg-block p-0" id="performance-chart-wrapper">
-          <canvas id="performance-chart" width="200" height="200"></canvas>
+        <div class="right-sec col-12 col-lg-6 text-center p-0 pt-5 pl-lg-4">
+          <div class="cards" id="performance-chart-wrapper">
+            <h3 class="card-title">Betoken Returns*</h3>
+            <canvas class="card-img-top d-lg-block d-md-block d-none" id="performance-chart"></canvas>
+            <hr>
+            <div class="card-body p-0 text-left">
+              <div class="hilights row">
+                <div class="key col-12 col-lg-4 d-flex align-items-center">
+                    <div class="betoken-desc">
+                        <p class="betoken-title betoken-font m-0">1 Months</p>
+                        <p class="betoken-value black-font m-0">40%</p>
+                    </div>
+                </div>
+                <hr class="d-lg-none d-block">
+                <div class="key col-12 col-lg-4 d-flex align-items-center">
+                    <div class="betoken-desc">
+                        <p class="betoken-title betoken-font m-0">3 Months</p>
+                        <p class="betoken-value black-font m-0">40%</p>
+                    </div>
+                </div>
+                <hr class="d-lg-none d-block">
+                <div class="key col-12 col-lg-4 d-flex align-items-center">
+                    <div class="betoken-desc">
+                        <p class="betoken-title betoken-font m-0">Since Inception†</p>
+                        <p class="betoken-value black-font m-0">1,340%</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="full-sec col-12 text-center">
           <span class="font-12 mr-2">Powered By</span><img src="images/KyberNetworkLogo.png" height="26">
@@ -327,8 +353,8 @@
     });
   </script>
   <script src="js/performance-bundle.js"></script>
-  <script src="js/Chart.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
+  <script src="js/Chart.bundle.js"></script>
+  <script src="js/loadingoverlay.js"></script>
   <script src="js/init.js"></script>
 </body>
 </html>
