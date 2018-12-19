@@ -4,8 +4,10 @@ $(document).ready(() => {
     });
     window.getROI().then((result) => {
         // 4 decimals
-        $(".1-month-roi").text(`${Math.round(result.btk1MonthROI * 10000) / 10000}`);
-        $(".inception-roi").text(`${Math.round(result.btkInceptionROI * 10000) / 10000}`);
+        $(".1-month-roi").text(`${result.betokenStats.ROI.oneMonth.toFormat(4)}`);
+        $(".inception-roi").text(`${result.betokenStats.ROI.sinceInception.toFormat(4)}`);
+        $(".sharpe-ratio").text(`${result.betokenStats.SharpeRatio.toFormat(4)}`);
+        $(".std").text(`${result.betokenStats.Std.toFormat(4)}`);
 
         var timestamps = [];
         for (var i = 0; i < result.timestamps.length; i++) {
