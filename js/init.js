@@ -4,14 +4,15 @@ $(document).ready(() => {
     });
     window.getROI().then((result) => {
         // 4 decimals
-        $(".1-month-roi").text(`${result.betokenStats.ROI.oneMonth.toFormat(4)}`);
-        $(".inception-roi").text(`${result.betokenStats.ROI.sinceInception.toFormat(4)}`);
-        $(".sharpe-ratio").text(`${result.betokenStats.SharpeRatio.toFormat(4)}`);
-        $(".std").text(`${result.betokenStats.Std.toFormat(4)}`);
+        let NUM_DECIMALS = 4;
+        $(".1-month-roi").text(`${result.betokenStats.ROI.oneMonth.toFormat(NUM_DECIMALS)}`);
+        $(".inception-roi").text(`${result.betokenStats.ROI.sinceInception.toFormat(NUM_DECIMALS)}`);
+        $(".sharpe-ratio").text(`${result.betokenStats.SharpeRatio.toFormat(NUM_DECIMALS)}`);
+        $(".std").text(`${result.betokenStats.Std.toFormat(NUM_DECIMALS)}`);
 
         var timestamps = [];
         for (var i = 0; i < result.timestamps.length; i++) {
-            timestamps.push(new Date(result.timestamps[i].start * 1e3).toLocaleDateString() + ' to ' + new Date(result.timestamps[i].end * 1e3).toLocaleDateString());
+            timestamps.push(new Date(result.timestamps[i].start * 1e3).toLocaleDateString() + '\n to ' + new Date(result.timestamps[i].end * 1e3).toLocaleDateString());
         }
         var xLabels = [];
         for (var i = 0; i < result.timestamps.length; i++) {
