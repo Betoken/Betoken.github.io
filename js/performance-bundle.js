@@ -44151,6 +44151,7 @@ function () {
             return new Promise(function (resolve, reject) {
               return https.get(apiStr, function (res) {
                 var rawData;
+                console.log(res);
                 rawData = "";
                 res.on("data", function (chunk) {
                   return rawData += chunk;
