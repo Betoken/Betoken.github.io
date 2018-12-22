@@ -470,6 +470,11 @@ footer{
   border-radius: 27px;
   min-height: 54px;
 }
+.chart-container{
+  position: relative;
+  margin: auto;
+  height: 320px
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media (min-width:320px) and (max-width: 480px) {

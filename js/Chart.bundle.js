@@ -10733,7 +10733,7 @@ var defaults = require(26);
 defaults._set('global', {
 	responsive: true,
 	responsiveAnimationDuration: 0,
-	maintainAspectRatio: true,
+	maintainAspectRatio: false,
 	events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove'],
 	hover: {
 		onHover: null,
@@ -10757,7 +10757,7 @@ defaults._set('global', {
 		padding: {
 			top: 0,
 			right: 0,
-			bottom: 0,
+			bottom: 16,
 			left: 0
 		}
 	}
@@ -11597,18 +11597,18 @@ defaults._set('scale', {
 	// grid line settings
 	gridLines: {
 		display: true,
-		color: 'rgba(0, 0, 0, 0.1)',
+		color: 'rgba(0, 0, 0, 0.16)',
 		lineWidth: 1,
-		drawBorder: true,
+		drawBorder: false,
 		drawOnChartArea: true,
-		drawTicks: true,
-		tickMarkLength: 10,
-		zeroLineWidth: 1,
-		zeroLineColor: 'rgba(0,0,0,0.25)',
+		drawTicks: false,
+		tickMarkLength: 24,
+		zeroLineWidth: 2,
+		zeroLineColor: 'rgba(0,0,0,0.36)',
 		zeroLineBorderDash: [],
 		zeroLineBorderDashOffset: 0.0,
 		offsetGridLines: false,
-		borderDash: [],
+		borderDash: [2],
 		borderDashOffset: 0.0
 	},
 
@@ -11636,7 +11636,7 @@ defaults._set('scale', {
 		minRotation: 0,
 		maxRotation: 50,
 		mirror: false,
-		padding: 0,
+		padding: 16,
 		reverse: false,
 		display: true,
 		autoSkip: true,
@@ -12656,11 +12656,11 @@ defaults._set('global', {
 		intersect: true,
 		backgroundColor: '#002B49',
 		titleFontStyle: 'normal',
-		titleSpacing: 8,
+		titleSpacing: 6,
 		titleMarginBottom: 16,
 		titleFontColor: '#fff',
 		titleAlign: 'left',
-		bodySpacing: 8,
+		bodySpacing: 16,
 		bodyFontColor: '#88ABC3',
 		bodyAlign: 'left',
 		footerFontStyle: 'normal',
@@ -12669,14 +12669,14 @@ defaults._set('global', {
 		footerFontColor: '#fff',
 		footerAlign: 'left',
 		yPadding: 16,
-		xPadding: 16,
+		xPadding: 24,
 		caretPadding: 4,
 		caretSize: 4,
 		cornerRadius: 4,
 		multiKeyBackground: '#fff',
 		displayColors: true,
 		borderColor: '#000',
-		borderWidth: 1,
+		borderWidth: 0,
 		callbacks: {
 			// Args are: (tooltipItems, data)
 			beforeTitle: helpers.noop,
@@ -13627,7 +13627,7 @@ defaults._set('global', {
 		arc: {
 			backgroundColor: defaults.global.defaultColor,
 			borderColor: '#fff',
-			borderWidth: 2
+			borderWidth: 1
 		}
 	}
 });
@@ -13829,11 +13829,11 @@ var defaultColor = defaults.global.defaultColor;
 defaults._set('global', {
 	elements: {
 		point: {
-			radius: 3,
+			radius: 0,
 			pointStyle: 'circle',
 			backgroundColor: defaultColor,
 			borderColor: defaultColor,
-			borderWidth: 1,
+			borderWidth: 0,
 			// Hover
 			hitRadius: 1,
 			hoverRadius: 4,
@@ -16520,9 +16520,10 @@ defaults._set('global', {
 	title: {
 		display: false,
 		fontStyle: 'bold',
+    fontSize: '16',
 		fullWidth: true,
 		lineHeight: 1.2,
-		padding: 10,
+		padding: 16,
 		position: 'top',
 		text: '',
 		weight: 2000         // by default greater than legend (1000) to be above
