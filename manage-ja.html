@@ -116,10 +116,10 @@
               </div>
               <div class="key col-6 d-flex align-items-center mt-4">
                 <div class="mr-3">
-                    <img src="images/ic_sharpe_ratio.svg" width="36">
+                    <img id="sharpe-ratio"src="images/ic_sharpe_ratio.svg" width="36">
                 </div>
                 <div class="betoken-desc">
-                  <p class="betoken-title betoken-font m-0">Sharpe Ratio <a href="#" data-toggle="tooltip" data-placement="top" title="Sharpe ratio: a way to examine the performance of an investment by adjusting for its risk — Wikipedia. The risk-free rate used here is 3% per year, an approximation of the US 10Y treasury bond's interest rate."><img class="ml-1 mx-auto" src="images/outline-info-24px.svg" width="16"></a></p>
+                  <p class="betoken-title betoken-font m-0">Sharpe Ratio <button type="button" class="btn btn-link p-0 mx-auto pb-1" data-toggle="tooltip" title="Sharpe ratio: a way to examine the performance of an investment by adjusting for its risk — Wikipedia. The risk-free rate used here is 3% per year, an approximation of the US 10Y treasury bond's interest rate."><img class="ml-1 mx-auto" src="images/outline-info-24px.svg" width="16"></button></p>
                   <p class="betoken-value black-font m-0"><span class="sharpe-ratio">Loading... </span></p>
                 </div>
               </div>
@@ -128,7 +128,7 @@
                     <img src="images/ic_standard_deviation.svg" width="36">
                 </div>
                 <div class="betoken-desc">
-                  <p class="betoken-title betoken-font m-0">Standard Deviation <a href="#" data-toggle="tooltip" data-placement="top" title="Standard deviation represents the volatility of an asset. The number shown here is the sample standard deviation of Betoken's monthly ROI."><img class="ml-1 mx-auto" src="images/outline-info-24px.svg" width="16"></a></p>
+                  <p class="betoken-title betoken-font m-0">Standard Deviation <button type="button" class="btn btn-link p-0 mx-auto pb-1" data-toggle="tooltip" title="Standard deviation represents the volatility of an asset. The number shown here is the sample standard deviation of Betoken's monthly ROI."><img class="ml-1 mx-auto" src="images/outline-info-24px.svg" width="16"></button></p>
                   <p class="betoken-value black-font m-0"><span class="std">Loading... </span>%</p>
                 </div>
               </div>
@@ -417,6 +417,9 @@
   <script>
     $('.carousel').carousel({
       interval: 5000
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
   <script src="js/performance-bundle.js"></script>
