@@ -92,13 +92,14 @@ button{
 
 .preheader-container{
   min-height: 48px;
-  background-color: #22C88A;
+  background-color: #2c7be5;
 }
 .preheader-content{
   position: relative;
   margin: 0 auto;
-  max-width: 490px;
-  padding: 0 24px;
+  max-width: 640px;
+  padding: 6px 8px;
+  text-align: center;
 }
 .preheader-content p{
   margin-bottom: 0;
