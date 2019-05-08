@@ -1,429 +1,1010 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Betoken | The crowd-powered crypto asset management protocol</title>
+    <meta name="description" content="Betoken is the first crowd-powered crypto asset management protocol">
 
-  <!-- Site Properties -->
-  <title>Betoken - Become a fund manager in one click</title>
-  <meta name="description" content="Talented crypto-traders can join the fund as a manager with minimal threshold, and will be rewarded in a meritocratic way.">
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap-grid.css" rel="stylesheet">
-  <!-- Betoken CSS -->
-  <link href="css/custom.css" rel="stylesheet">
-  <!-- Custom Fonts -->
-  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116797881-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/fonts/feather/feather.min.css">
+    <link rel="stylesheet" href="assets/libs/highlight.js/styles/vs2015.css">
+    <link rel="stylesheet" href="assets/libs/quill/dist/quill.core.css">
+    <link rel="stylesheet" href="assets/libs/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/libs/flatpickr/dist/flatpickr.min.css">
+    <link rel='stylesheet' href='https://widget.kyber.network/v0.6.4/widget.css'>
 
-    gtag('config', 'UA-116797881-1');
-  </script>
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="images/site.webmanifest">
-  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#22C88A">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="images/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-</head>
+    <link rel="icon" type="image/png" href="assets/img/betoken-icon-default.png">
+    <!-- Theme CSS -->
+    
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+      
+    <meta content="@betokenfund" name="twitter:site" />
+    <meta content="An open source protocol for crypto assets management connecting capital and talent" name="description" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="Betoken | The crowd-powered crypto asset management protocol" name="twitter:title" />
+    <meta content="Betoken is an open source protocol for crypto assets management connecting capital and talent" name="twitter:description" />
+    <meta content="https://betoken.fund/assets/img/illustrations/og-twitter-image.png" name="twitter:image" />
+    <meta content="Betoken | The crowd-powered crypto asset management protocol" itemprop="name" />
+    <meta content="Betoken is an open source protocol for crypto assets management connecting capital and talent" itemprop="description" />
+    <meta content="assets/img/illustrations/og-twitter-image.png" itemprop="image" />
+    <meta content="Betoken | The crowd-powered crypto asset management protocol" property="og:title" />
+    <meta content="https://betoken.fund" property="og:url" />
+    <meta content="https://betoken.fund/assets/img/illustrations/og-twitter-image.png" property="og:image" />
+    <meta content="Betoken is an open source protocol for crypto assets management connecting capital and talent" property="og:description" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116797881-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<body class="managepage">
-  <div class="preheader-container">
-    <div class="preheader-content">
-      <p class="d-inline-block">Support Betoken security audit. <a href="https://medium.com/betoken/betoken-monthly-update-april-2019-b23785a152c3?source=friends_link&sk=fd81a60bd49fb36ee37e8fccdbd9a88c" target="_blank" class="text-white d-inline-block" style="text-decoration: underline!important;">Read the medium post</a></p>&nbsp;&nbsp;<a href="https://etherscan.io/address/0x332d87209f7c8296389c307eae170c2440830a47" class="btn btn-sm btn-primary d-inline-block" target="_blank">Donate Here</a>
-    </div>
-  </div>
-  <div class="container">
-    <header class="row d-lg-flex justify-content-between align-items-center mt-3 pt-lg-3 mb-lg-3">
-      <img src="images/BetokenLogo.svg" class="logo m-auto m-lg-0 p-3 p-lg-0 d-lg-block d-none">
-      <div  class="button-wrapper text-center d-flex align-items-center m-auto m-lg-0 p-3 p-lg-0">
-        <div class="btn-group btn-group-lg curved-button-group" role="group" aria-label="top nav">
-          <a class="btn curved-button" href="./invest.html">INVEST</a>
-          <a class="btn curved-button activerht" href="./index.html">MANAGE</a>
-        </div>
-      </div>
-      <span class="social-wing text-right d-sm-none d-none d-lg-block">
-        <a class="btn btn-primary d-inline-flex justify-content-center align-items-center mr-3" href="https://betoken.fund/portal/">LAUNCH BETA</a>
-        <a class="circular-button d-inline-flex justify-content-center align-items-center mr-3 mb-3" href="https://twitter.com/betokenfund" target="_blank">
-          <i class="fa fa-twitter twitter"></i>
-        </a>
-        <a class="circular-button d-inline-flex justify-content-center align-items-center mr-3 mb-3" href="https://medium.com/betoken" target="_blank">
-          <i class="fa fa-medium"></i>
-        </a>
-        <a class="circular-button d-inline-flex justify-content-center align-items-center mr-3 mb-3"
-        href="https://t.me/betokenfund" target="_blank">
-          <i class="fa fa-telegram telegram"></i>
-        </a>
-      </span>
-    </header>
-    <div class="row d-flex justify-content-between align-items-center mt-5 mb-5 d-lg-none">
-      <img src="images/BetokenLogo.svg" class="logo m-auto">
-    </div>
-    <section class="row mb-lg-5 mt-sm-3">
-      <div class="left-sec col-lg-6 col-md-12 pb-lg-5 pt-lg-5 pl-lg-0">
-        <h2 class="text-center d-lg-none">Become a fund manager <br> in one click.</h2>
-        <h2 class="d-none d-lg-block">Become a fund manager <br> in one click.</h2>
-        <div class="flow-list pl-5 pb-lg-4 pt-4 pb-4">
-          <p class="font-18 ml-2 d-inline-block line-1">They said you needed <b>"qualifications"</b> to make videos… <br>
-            Then <b>YouTube</b> happened.</p>
-            <p class="font-18 ml-2 d-inline-block line-1">They said you needed <b>"qualifications"</b> to make news… <br>
-              Then <b>social media</b> happened.</p>
-              <p class="font-18 ml-2 d-inline-block line-1">They said you needed <b>"qualifications"</b> to make investments… <br>
-                Then <b>Betoken</b> happened.
-              </p>
-          </div>
-          <a class="btn btn-primary btn-lg btn-block d-lg-none mb-4" href="https://betoken.fund/iao/">BECOME A FUND MANAGER</a>
-          <a class="btn btn-primary btn-lg btn-block d-lg-block d-none mb-4" href="https://betoken.fund/iao/">BECOME A FUND MANAGER</a>
-          <p>Already have Kairo tokens? <a href="https://betoken.fund/portal/" target="_blank">LAUNCH BETA</a></p>
-        </div>
-        <div class="right-sec col-12 col-lg-6 text-center p-lg-0 pt-5 pl-lg-4 mt-lg-5">
-          <div class="cards d-lg-block d-none">
-            <h3 class="card-title m-0">Betoken Returns</h3>
-            <div class="chart-container" id="performance-chart-wrapper">
-              <canvas class="card-img-top" id="performance-chart"></canvas>
-            </div>
-            <hr>
-            <div class="card-body p-0 text-left">
-              <div class="hilights row">
-                <div class="key col-6 d-flex align-items-center">
-                    <div class="mr-3">
-                        <img src="images/average-monthy-roi.svg" width="36">
-                    </div>
-                    <div class="betoken-desc">
-                      <p class="betoken-title betoken-font m-0">ROI (1 Month)<a href="#disclaimer">*</a></p>
-                      <p class="betoken-value black-font m-0"><span class="1-month-roi">Loading... </span>%</p>
-                    </div>
-                </div>
-                <div class="key col-6 d-flex align-items-center">
-                    <div class="mr-3">
-                        <img src="images/average-monthy-roi.svg" width="36">
-                    </div>
-                    <div class="betoken-desc">
-                      <p class="betoken-title betoken-font m-0">ROI (Since Inception)</p>
-                      <p class="betoken-value black-font m-0"><span class="inception-roi">Loading... </span>%</p>
-                    </div>
-                </div>
-                <div class="key col-6 d-flex align-items-center mt-4">
-                  <div class="mr-3">
-                      <img id="sortino-ratio"src="images/ic_sharpe_ratio.svg" width="36">
-                  </div>
-                  <div class="betoken-desc">
-                    <p class="betoken-title betoken-font m-0">Sortino Ratio <button type="button" class="btn btn-link p-0 mx-auto pb-1" data-toggle="tooltip" title="Sortino Ratio: a way to examine the performance of an investment by adjusting for its risk — Wikipedia. The risk-free rate used here is 3% per year, an approximation of the US 10Y treasury bond's interest rate."><img class="ml-1 mx-auto" src="images/outline-info-24px.svg" width="16"></button></p>
-                    <p class="betoken-value black-font m-0"><span class="sortino-ratio">Loading... </span></p>
-                  </div>
-                </div>
-                <div class="key col-6 d-flex align-items-center mt-4">
-                  <div class="mr-3">
-                      <img src="images/ic_standard_deviation.svg" width="36">
-                  </div>
-                  <div class="betoken-desc">
-                    <p class="betoken-title betoken-font m-0">Standard Deviation <button type="button" class="btn btn-link p-0 mx-auto pb-1" data-toggle="tooltip" title="Standard deviation represents the volatility of an asset. The number shown here is the sample standard deviation of Betoken's monthly ROI."><img class="ml-1 mx-auto" src="images/outline-info-24px.svg" width="16"></button></p>
-                    <p class="betoken-value black-font m-0"><span class="std">Loading... </span>%</p>
-                  </div>
-                </div>
+      gtag('config', 'UA-116797881-1');
+    </script>
+
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    <!-- Get Updates modal -->
+    <div class="modal fade fixed-right" id="modalEmailUpdates" tabindex="-1" role="dialog" aria-labelledby="Get update modal by email" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-body pb-5">
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="header text-center">
+              <div class="header-body">
+
+                <h6 class="header-pretitle">
+                  Betoken Report
+                </h6>
+
+                <h1 class="header-title">
+                  Get notified by email
+                </h1>
+
               </div>
             </div>
-          </div>
-          <div class="cards d-lg-none d-block mb-4 mt-0">
-            <h3 class="card-title">Betoken Returns</h3>
-            <hr>
-            <div class="card-body p-0 text-left">
-              <div class="hilights row">
-                <div class="key col-12 d-flex align-items-center">
-                    <div class="mr-3">
-                        <img src="images/average-monthy-roi.svg">
-                    </div>
-                    <div class="betoken-desc">
-                      <p class="betoken-title betoken-font m-0">ROI (1 Month)</p>
-                      <p class="betoken-value black-font m-0"><span class="1-month-roi">Loading... </span>%</p>
-                    </div>
+            <!-- Text -->
+            <p class="text-center text-muted mb-5">
+              Be the first to know about new investments cycles and Betoken's next big things 👇.
+            </p>
+            <form action="https://fund.us17.list-manage.com/subscribe/post?u=9c0647dcb587985ed6121cdf6&amp;id=150e0f091e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate w-100" target="_blank" novalidate>
+              <div class="input-group input-group-lg mb-4">
+                <input class="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="myemail@address.com" required>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9c0647dcb587985ed6121cdf6_150e0f091e" tabindex="-1" value=""></div>
+                <div class="input-group-append">
+                  <button class="btn btn-success border-0" name="subscribe" id="mc-embedded-subscribe">
+                      <span class="fe fe-send"></span>
+                  </button>
                 </div>
-                <div class="key col-12 mt-4 d-flex align-items-center">
-                    <div class="mr-3">
-                        <img src="images/average-monthy-roi.svg">
-                    </div>
-                    <div class="betoken-desc">
-                      <p class="betoken-title betoken-font m-0">ROI (Since Inception)</p>
-                      <p class="betoken-value black-font m-0"><span class="inception-roi">Loading... </span>%</p>
-                    </div>
-                </div>
-                <div class="key col-12 mt-4 d-flex align-items-center">
-                  <div class="mr-3">
-                      <img src="images/ic_sharpe_ratio.svg">
-                  </div>
-                  <div class="betoken-desc">
-                    <p class="betoken-title betoken-font m-0">Sortino Ratio <a href="#" data-toggle="tooltip" data-placement="top" title="Sortino Ratio 'is a way to examine the performance of an investment by adjusting for its risk.' (Wikipedia) The risk-free rate used here is 3% per year, an approximation of the US 10Y treasury bond's interest rate."><img class="ml-1 mx-auto" src="images/outline-info-24px.svg" width="16"></a></p>
-                    <p class="betoken-value black-font m-0"><span class="sortino-ratio">Loading... </span></p>
-                  </div>
-                </div>
-                <div class="key col-12 mt-4 d-flex align-items-center">
-                  <div class="mr-3">
-                      <img src="images/ic_standard_deviation.svg">
-                  </div>
-                  <div class="betoken-desc">
-                    <p class="betoken-title betoken-font m-0">Standard Deviation <a href="#" data-toggle="tooltip" data-placement="top" title="Standard deviation represents the volatility of an asset. The number shown here is the sample standard deviation of Betoken's monthly ROI."><img class="ml-1 mx-auto" src="images/outline-info-24px.svg" width="16"></a></p>
-                    <p class="betoken-value black-font m-0"><span class="std">Loading... </span>%</p>
-                  </div>
-                </div>
+              </div>
+            </form>
+            <div class="row justify-content-center">
+              <div class="col-auto mb-5">
+                <a href="https://t.me/betokenfund" class="btn btn-rounded-circle btn-white mr-3" target="_blank">
+                  <img class="mx-auto" src="assets/img/telegram.svg" alt="telegram logo" height="20">
+                </a>
+                <a href="https://twitter.com/betokenfund" class="btn btn-rounded-circle btn-white mr-3" target="_blank">
+                  <img class="mx-auto" src="assets/img/twitter.svg" alt="twitter logo" height="20">
+                </a>
+                <a href="https://medium.com/betoken" class="btn btn-rounded-circle btn-white mr-3" target="_blank">
+                  <img class="mx-auto" src="assets/img/medium.svg" alt="medium logo" height="20">
+                </a>
+                <a href="https://github.com/Betoken" class="btn btn-rounded-circle btn-white" target="_blank">
+                  <img class="mx-auto" src="assets/img/github.svg" alt="medium logo" height="20">
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="full-sec col-12 mt-4 text-center">
-          <span class="font-12 mr-2">Powered By</span><img src="images/KyberNetworkLogo.png" height="26">
-        </div>
-    </section>
+      </div>
+    </div><!-- / modal -->
+    <!-- Modal: sidebar -->
+    <div class="modal fade" id="sidebarModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical modal-sidebar-nav" role="document">
+        <div class="modal-content">
+          <div class="modal-body px-0 px-md-4">
+            <nav class="navbar navbar-vertical fixed-left navbar-expand-sm navbar-light border-0">
 
-    <section class="middile-section mt-5 pt-5 pt-lg-0 mt-lg-0">
-      <div class="heading-div text-center mb-3">
-        <h2 class="mb-lg-4 mb-4">A Manager’s Journey</h2>
-        <div class="divider m-auto"></div>
-        <p class="font-18 col-lg-8 mb-lg-5 m-auto pt-lg-4 pt-4">Anyone can be a Betoken manager, and you're judged by merit and merit alone.</p>
-      </div>
-      <div class="illustration-div row mb-1 d-none d-lg-flex">
-        <div class="col-lg-4 mb-3 text-center">
-          <img src="images/purchase.svg">
-        </div>
-        <div class="col-lg-4 mb-3 text-center">
-          <img src="images/skill.svg">
-        </div>
-        <div class="col-lg-4 mb-3 text-center">
-          <img src="images/earn.svg">
-        </div>
-      </div>
-      <div class="seperator-div mb-3 row d-lg-flex justify-content-around align-items-center position-relative
-        d-none d-lg-block">
-        <div class="connector w-75 m-auto"></div>
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="spliter m-auto"></div>
-          <div class="stage-icon">1</div>
-          <div class="spliter m-auto"></div>
-        </div>
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="spliter m-auto"></div>
-          <div class="stage-icon">2</div>
-          <div class="spliter m-auto"></div>
-        </div>
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="spliter m-auto"></div>
-          <div class="stage-icon">3</div>
-          <div class="spliter m-auto"></div>
-        </div>
-      </div>
-      <div class="explanatory-div row">
-        <div class="col-lg-4 col-sm-12 text-center">
-          <img src="images/purchase.svg" class="d-lg-none d-sm-block m-auto">
-          <h5 class="mb-3 mt-3">Purchase a manager account</h5>
-          <p class="font-18">To start managing, you need to <a href="https://betoken.fund/iao/" target="_blank">buy a manager account</a>. It will be pre-loaded with Kairo tokens, which you can use to make investment decisions.</p>
-        </div>
-        <div class="col-lg-4 col-sm-12 text-center">
-          <img src="images/skill.svg" class="d-lg-none d-sm-block m-auto">
-          <h5 class="mb-3 mt-3">Show your investing skills</h5>
-          <p class="font-18">Manage a percentage of the Betoken fund by buying and selling crypto-assets directly in our dApp.</p>
-        </div>
-        <div class="col-lg-4 col-sm-12 text-center">
-          <img src="images/earn.svg" class="d-lg-none d-sm-block m-auto">
-          <h5 class="mb-3 mt-3">Earn commission & Kairo tokens</h5>
-          <p class="font-18">Get rewarded with Kairo by making profits. Redeem your commissions at the end of each investment cycle. You get more commissions by earning more Kairo.</p>
-        </div>
-      </div>
-    </section>
+              <!-- Brand -->
+              <a class="navbar-brand text-left" href="index.html">
+                <img src="assets/img/logo.svg" class="navbar-brand-img" alt="Betoken logo" height="36"> <span class="text-secondary ml-2 h3 mb-0">Betoken</span>
+              </a>
 
-    <section class="row mt-3 pt-5 pb-5 pb-lg-4 mb-lg-0 mb-5">
-      <div class="col-lg-6 col-sm-12 left-sec mt-lg-5">
-        <div class="pb-lg-5 pt-lg-0 pt-3 pb-3">
-          <h2 class="mb-2 mt-3 mb-lg-2 mt-lg-0">Incentivized Meritocracy
-            <div class="divider"></div>
-          </h2>
-          <p class="font-18">Betoken uses its own token called Kairo to represent how much of our investors' money each manager can manage.</p>
-          <div class="flow-structure pt-lg-4">
-            <div class="flow-list pl-5">
-              <p class="font-18 ml-2 d-inline-block">Through constant redistribution of Kairo based on performance, we ensure that Betoken is meritocratic. In addition, we pay managers commission based on how much Kairo they have.</p>
-              <p class="font-18 ml-2 d-inline-block">The more profits you make, the more Kairo you have, the more money you can manage, the more income you get.</p>
-              <p class="font-18 ml-2 d-inline-block">This is the core of Betoken's decision-making system  - <a href="https://github.com/Betoken/documents/tree/master/Incentivized%20Meritocracies" target="_blank">Incentivized Meritocracy.</a></p>
+              <!-- Collapse -->
+              <div class="collapse navbar-collapse show" id="navbarVertical">
+
+                <!-- Navigation -->
+                <ul class="navbar-nav mb-md-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://betoken.fund">
+                      <i class="fe fe-home"></i>Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="funding.html">
+                      <i class="fe fe-dollar-sign"></i>Funding
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="friends.html">
+                      <i class="fe fe-users"></i>Friends of Betoken
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://betoken.gitbook.io/betoken/what-is-the-fees-structure" target="_blank">
+                      <i class="fe fe-percent"></i> Fees & liquidity
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://medium.com/betoken" target="_blank">
+                      <i class="fe fe-feather"></i> From the blog
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Betoken/Whitepaper/" target="_blank">
+                      <i class="fe fe-book"></i> White Paper
+                    </a>
+                  </li>
+                </ul>
+                <hr class="navbar-divider my-3">
+                <p class="small text-secondary">Be part of the open finance</p>
+                <a class="btn btn-sm btn-success" href="start.html">Sign Up Now</a>
+                <hr class="navbar-divider my-3">
+                <!-- Navigation -->
+                <ul class="navbar-nav mb-md-3">
+                  <li class="nav-item">
+                    <a class="nav-link small" href="https://betoken.gitbook.io/betoken/">
+                      Help
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link small" href="https://t.me/betokenfund">
+                      Send feedback
+                    </a>
+                  </li>
+                </ul>
+
+              </div> <!-- / .navbar-collapse -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- NAVIGATION
+    ================================================== -->
+    <!-- HEADER -->
+    <a href="funding.html">
+      <div class="main-container bg-primary">
+        <div class="container">
+          <div class="row justify-content-center align-items-center p-3">
+            <div class="col-auto">
+              <p class="d-inline-block mb-0 text-white mr-2 mb-3 mb-lg-0">We rely on donations to keep working on the project. Support Betoken by making a donation <i class="fe fe-arrow-right ml-2"></i></p>
             </div>
           </div>
-          <p class="font-18 mt-3">Learn more about Betoken's commission and fee structure in our <a href="https://github.com/Betoken/Whitepaper/" target="_blank">whitepaper</a>. Also check out our <a href="https://medium.com/betoken" target="_blank">research</a>.</p>
         </div>
       </div>
-      <div class="col-lg-6 col-sm-12 right-sec mt-lg-5">
-        <img src="images/solve.png" class="d-none d-lg-block ml-lg-5" width="80%">
-        <img src="images/solve.png" class="d-lg-none" width="100%">
-      </div>
-    </section>
+    </a>
 
-    <div class="meet-us-section mt-5 pt-lg-5 mb-lg-5">
-      <div class="d-flex row">
-        <div class="left-sec col-lg-6 col-sm-12">
-          <h2 class="pb-lg-3 mt-lg-5 pt-3">Meet our managers
-          </h2>
-          <div class="divider mt-5 mb-5"></div>
-          <div class="communication-block">
-            <div id="myCarousel" class="carousel slide position-relative" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-              </ol>
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="cards m-2">
-                    <h5 class="mb-3">@cavemandrew on Betoken Telegram members</h5>
-                    <p>"I've been trying out other investment platforms because I'm on the hunt for the best way to hedge my 401k holdings with equally reliable crypto holdings. Betoken looks to be the most promising, and I've been waiting patiently!""</p>
-                  </div>
+    <div class="bg-ellipses bg-dark pb-7">
+      <!-- NAVIGATION
+      ================================================== -->
+      <nav class="navbar navbar-expand-lg bg-transparent border border-0 mb-5" id="topnav">
+        <div class="container">
+          <div class="row d-flex justify-content-between no-gutters w-100">
+            <div class="col d-flex align-items-center">
+              <!-- Brand -->
+              <a class="text-white" href="#" data-toggle="modal" data-target="#sidebarModal"><i class="fe fe-menu mr-3 h1 mb-0"></i></a>
+              <a class="navbar-brand mr-auto d-flex align-items-center" href="index.html">
+                <img src="assets/img/logo.svg" alt="..." class="navbar-brand-img">
+                <span class="text-white ml-2 h3 mb-0">Betoken</span>
+              </a>
+            </div>
+            <div class="col ml-auto d-flex justify-content-end">
+              <div class="navbar-user">
+                <a class="text-white mr-5 d-none d-md-flex" href="funding.html">Funding</a>
+                <a class="text-white mr-5 d-none d-md-flex" href="friends.html">Friends</a>
+                <a class="text-white mr-5 d-none d-md-flex" href="https://medium.com/betoken" target="_blank">Blog</a>
+                <a class="text-white mr-5 d-none d-md-flex" href="https://betoken.gitbook.io/betoken/" target="_blank">Help</a>
+                <div class="mr-4 d-none d-md-flex">
+                  <a class="text-white" data-toggle="modal" href="#modalEmailUpdates">
+                    <span class="icon active">
+                      <i class="fe fe-bell"></i>
+                    </span>
+                  </a>
+
                 </div>
-                <div class="carousel-item">
-                  <div class="cards m-2">
-                    <h5 class="mb-3">@denizined on Kyber Telegram channel</h5>
-                    <p>“Just registered and looking forward to trying out Betoken, it's a very interesting concept”</p>
+              </div>
+              <ul class="navbar-nav">
+                <li class="nav-item mr-2 d-none d-md-flex align-items-center">
+                  <a class="text-white btn btn-link" href="https://betoken.fund/portal/#/dashboard">
+                    Sign in
+                  </a>
+                </li>
+                <li class="nav-item mr-2 d-none d-md-flex align-items-center">
+                  <a class="text-white btn btn-success" href="start.html">
+                    Sign Up
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- / .container -->
+      </nav>
+      <div class="container">
+        <div class="row justify-content-center mb-lg-5">
+          <div class="col col-lg-8 text-center">
+            <!-- Subtitle -->
+            <h6 class="header-pretitle text-muted">Meet Betoken</h6>
+            <!-- Title -->
+            <h1 class="display-2 d-none d-lg-block text-white mb-5">
+              The crowd-powered crypto asset management protocol
+            </h1>
+            <h1 class="display-4 d-block d-lg-none text-white mb-5">
+              The crowd-powered crypto asset management protocol
+            </h1>
+            <a class="btn btn-success btn-lg mb-3" href="start.html">Get started</a>
+            <p class="text-muted small">Already using Betoken? <a class="text-white" href="https://betoken.fund/portal/#/dashboard" target="_blank">Sign in</a>.</p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .bg-ellipses -->
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content">
+      <!-- CARDS -->
+      <div class="container mt-n6 mb-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6 col-xl-10">
+
+            <!-- Card -->
+
+            <div class="card border-0">
+              <div class="card-header bg-warning"><p class="text-white mb-0 d-flex align-items-center">Currently Live: Rinkeby | Betoken Mainnet will launch on June 2019. <a class="ml-auto text-white" href="https://betoken.fund/portal/#/dashboard" target="_blank"> <span class="d-none d-lg-inline-block">Try it</span> <i class="fe fe-external-link"></i></a></p></div>
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="row">
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <span class="h2 fe fe-activity text-muted mb-0"></span>
+
+                      </div>
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          ROI (1 Month)
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="1-month-roi h2 mb-0">
+                          <div class="spinner-grow spinner-grow-sm" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                        </span>
+                        <span class="h2 mb-0 mr-1">
+                          %
+                        </span>
+
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="cards m-2">
-                    <h5 class="mb-3">u/indah00d in r/kybernetwork</h5>
-                    <p>“I like the platform, feels like playing a game with portfolio.”</p>
+                  <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="row">
+                    <div class="col-auto">
+
+                      <!-- Icon -->
+                      <span class="h2 fe fe-sunrise text-muted mb-0"></span>
+
+                    </div>
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          ROI (Since inception)
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="inception-roi h2 mb-0">
+                          <div class="spinner-grow spinner-grow-sm" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                        </span>
+                        <span class="h2 mb-0 mr-1">
+                          %
+                        </span>
+
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="cards m-2">
-                    <h5 class="mb-3">@mynameisphil on Betoken Telegram member</h5>
-                    <p>“I have always wanted to start my own hedge fund but I am not a multi millionaire, this idea is exactly what I am looking for.”</p>
+                  <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="row">
+
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <span class="h2 fe fe-shield text-muted mb-0"></span>
+
+                      </div>
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Sortino ratio
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="sortino-ratio h2 mb-0">
+                          <div class="spinner-grow spinner-grow-sm" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                        </span>
+
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <div class="col-12 col-lg-3">
+                    <div class="row">
+
+                      <div class="col-auto">
+
+                        <!-- Icon -->
+                        <span class="h2 fe fe-bar-chart-2 text-muted mb-0"></span>
+
+                      </div>
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Standard deviation
+                        </h6>
+
+                        <!-- Heading -->
+                        <span class="std h2 mb-0">
+                          <div class="spinner-grow spinner-grow-sm" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div> <!-- / .row -->
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5 mb-lg-6">
+          <div class="col col-lg-8 col-xl-8">
+
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              You think 2 brains are better than one...
+            </h2>
+
+            <!-- Text -->
+            <p class="display-4 text-center text-muted d-none d-lg-block">
+              How about hundreds of talented asset managers working for you? Worldwide!
+            </p>
+
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              You think 2 brains are better than one...
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted d-block d-lg-none">
+              How about hundreds of talented asset managers working for you? Worldwide!
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <!-- Text -->
+            <p class="lead text-secondary text-center">
+              Many people have the capital to invest in cryptocurrency but not the expertise, and many others have the expertise but not the capital.
+            </p>
+          </div>
+          <div class="col-12 col-lg-2 mb-4 mb-lg-0">
+            <img class="d-block w-100 mx-auto" src="assets/img/illustrations/undraw_connected_world_wuay.svg" alt="undraw_connected_world_wuay">
+          </div>
+          <div class="col-12 col-lg-4">
+            <!-- Text -->
+            <p class="lead text-secondary text-center">
+              Betoken is an open-source, community-owned, permissionless, and censorship-resistant protocol for connecting capital with talent, and talent with capital.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5 mb-lg-6">
+          <div class="col col-lg-8 col-xl-8">
+
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              An open crypto fund managed by code and meritocracy
+            </h2>
+
+            <!-- Text -->
+            <p class="display-4 text-center text-muted d-none d-lg-block">
+              Your money is managed by the best people
+            </p>
+
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              An open crypto fund managed by code and meritocracy
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted d-block d-lg-none">
+              Your money is managed by the best people
+            </p>
+
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center align-items-center mb-0 mb-lg-6">
+          <div class="col-12 col-lg-5 mb-5 mb-lg-0">
+            <h3 class="h1">Sit back and relax</h3>
+            <!-- Text -->
+            <p class="lead text-secondary">
+              Your capital is automatically distributed among Betoken’s <a href="https://betoken.fund/portal/#/rankings" target="_blank">community of managers</a>. The best of them will have the most influence over how that capital is put to work.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0 order-first order-lg-last">
+            <img class="d-block w-50 mx-auto" src="assets/img/illustrations/sit.svg" alt="sit">
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center align-items-center mb-0 mb-lg-6">
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+            <img class="d-block w-50 mx-auto" src="assets/img/illustrations/undraw_time_management_30iu.svg" alt="undraw_time_management_30iu">
+          </div>
+          <div class="col-12 col-lg-5 mb-6 mb-lg-0">
+            <h3  class="h1">Save time & effort</h3>
+            <!-- Text -->
+            <p class="lead text-secondary mb-4">
+              Unlike platforms such as Melonport and eToro, you don’t need to waste time on choosing the best performers and carefully hedging capital amongst them. All Betoken managers actively trade against the market while you sleep.
+            </p>
+            <a class="btn btn-success btn-lg" href="start.html">Connect your capital</a>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center align-items-center mb-5 mb-lg-6">
+          <div class="col-12 col-lg-5 mb-5 mb-lg-0">
+            <h3 class="h1">The best managers earn the most</h3>
+            <!-- Text -->
+            <p class="lead text-secondary">
+              The Betoken protocol recognizes and quantifies the talent of its crypto-traders by allocating units of reputation to them, denominated in <a href="https://github.com/Betoken/Whitepaper/blob/master/BetokenWhitepaper.md#12-betokens-solution" target="_blank">Kairo tokens</a>, and financially rewards them based on their talent and contributions.
+            </p>
+            <a class="btn btn-success btn-lg" href="start.html">Start managing</a>
+          </div>
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0 order-first order-lg-last">
+            <img class="d-block w-50 mx-auto" src="assets/img/illustrations/purchase.svg" alt="purchase">
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5">
+          <div class="col col-lg-8 text-center">
+
+            <!-- Title -->
+            <h2 class="display-2 d-none d-lg-block mb-5">
+              How is Betoken different?
+            </h2>
+
+            <!-- Title -->
+            <h2 class="display-4 d-block d-lg-none mb-5">
+              How is Betoken different?
+            </h2>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center">
+          <div class="col-auto col-lg-4">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link text-secondary active lead py-4" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+                <span class="d-flex d-lg-none">1</span>
+                <span class="d-none d-lg-flex">User-owned, User-governed</span>
+              </a>
+              <a class="nav-link text-secondary lead py-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">
+                <span class="d-flex d-lg-none">2</span>
+                <span class="d-none d-lg-flex">Active Management</span>
+              </a>
+              <a class="nav-link text-secondary lead py-4" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">
+                <span class="d-flex d-lg-none">3</span>
+                <span class="d-none d-lg-flex">Full Collateralization</span>
+              </a>
+              <a class="nav-link text-secondary lead py-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">
+                <span class="d-flex d-lg-none">4</span>
+                <span class="d-none d-lg-flex">50+ Assets</span>
+              </a>
+              <a class="nav-link text-secondary lead py-4" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">
+                <span class="d-flex d-lg-none">5</span>
+                <span class="d-none d-lg-flex">No limits, no hidden fees</span>
+              </a>
+            </div>
+          </div>
+          <div class="col col-lg-7">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                <img class="d-block w-50 mx-auto mb-4" src="assets/img/illustrations/undraw_team_spirit_hrr4.svg" alt="undraw_team_spirit_hrr4">
+                <h3 class="h2 d-block d-lg-none">User-owned, User-governed</h3>
+                <p class="lead text-secondary">
+                  Betoken's <a href="https://github.com/Betoken/Whitepaper/" target="_blank">governance system</a> oversees protocol changes and upgrades, and provides funding for the development of new features. No single company or individual can control the protocol. It's owned and governed by the very people who use it and benefit from it—You.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                <img class="d-block w-50 mx-auto mb-4" src="assets/img/illustrations/undraw_developer_activity_bv83.svg" alt="undraw_developer_activity_bv83">
+                <h3 class="h2 d-block d-lg-none">Active Management</h3>
+                <p class="lead text-secondary">
+                  Hundreds of Betoken managers actively prevent losses and seize profitable opportunities for your sake. Your money is converted into an actively managed portfolio of assets that can immediately respond to even the slightest changes in the market.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                <img class="d-block mx-auto mb-4" src="assets/img/illustrations/undraw_vault_9cmw.svg" alt="undraw_vault_9cmw" style="max-width:200px">
+                <h3 class="h2 d-block d-lg-none">Full Collateralization</h3>
+                <p class="lead text-secondary">
+                  When you connect your capital to Betoken, your deposit is converted in Betoken Share tokens. It represents your ownership in the Betoken fund and is fully backed by a collateral in the smart contract. Each of them acts like a tokenized portfolio, containing the underlying tokens that Betoken managers buy and sell.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                <img class="d-block w-50 mx-auto mb-4" src="assets/img/illustrations/undraw_digital_currency_qpak.svg" alt="undraw_digital_currency_qpak">
+                <h3 class="h2 d-block d-lg-none">50+ Assets</h3>
+                <p class="lead text-secondary">
+                  By connecting your capital to Betoken protocol, you get a direct exposure to ETH, WBTC, BAT, MKR and 50+ ERC20 tokens.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+                <img class="d-block w-50 mx-auto mb-4" src="assets/img/illustrations/undraw_discount_d4bd.svg" alt="undraw_discount_d4bd">
+                <h3 class="h2 d-block d-lg-none">No limits, no hidden fees</h3>
+                <p class="lead text-secondary">
+                  No minimums. No deposit fees. Only $1, $2, or $3 to start automating your crypto portfolio..
+                </p>
+                <a href="https://betoken.gitbook.io/betoken/what-is-the-fees-structure" target="_blank">More about fees, lockup, and liquidity<i class="fe fe-arrow-right ml-2"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="right-sec col-lg-6 col-sm-12">
-          <img src="images/work_chat.svg" class="mt-5 mt-lg-0" width="100%">
-        </div>
-      </div>
-    </div>
-  </div>
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5 mb-lg-6">
+          <div class="col col-lg-8 col-xl-8">
 
-  <div class="container">
-    <section class="middile-section mt-5 pt-5">
-      <div class="heading-div text-center mb-5">
-        <h2 class="mb-lg-4 mb-4">Meet the team
-        </h2>
-        <div class="divider m-auto"></div>
-        <p class="font-18 col-lg-8 mb-lg-5 m-auto pt-lg-4 pt-4">Betoken is a team of distributed entrepreneurs, engineers, and blockchain experts. We're hiring! Let's draw together the future of finance!</p>
-      </div>
-      <div class="illustration-div row mb-1 d-none d-lg-flex justify-content-center">
-        <div class="col-lg-4 text-center">
-          <img src="images/zefram.jpg" width="54" class="profil-pic">
-        </div>
-        <div class="col-lg-4 text-center">
-          <img src="images/guillaume.jpg" width="54" class="profil-pic">
-        </div>
-      </div>
-      <div class="explanatory-div row d-flex justify-content-center">
-        <div class="col-lg-4 col-sm-12 mb-4 text-center">
-          <img src="images/zefram.jpg" class="d-lg-none d-sm-block m-auto profil-pic" width="54">
-          <h5 class="mb-3 mt-3">Zefram Lou</h5>
-          <p class="font-18">Zefram is the cofounder and lead developer of Betoken. He is in charge of everything blockchain. He currently studies Computer Science at UC San Diego. He is passionate about crypto-economics and mechanism design. <a href="https://www.linkedin.com/in/zebangliu/" target="_blank">LinkedIn</a></p>
-        </div>
-        <div class="col-lg-4 col-sm-12 text-center">
-          <img src="images/guillaume.jpg" class="d-lg-none d-sm-block m-auto profil-pic" width="54">
-          <h5 class="mb-3 mt-3">Guillaume Palayer</h5>
-          <p class="font-18">Guillaume is the cofounder of Betoken. His mission is to design and code the front end experience of the dApp. He's also an user researcher passionate by the token economy and the decentralized Web. <a href="https://www.linkedin.com/in/gpalayer/" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-  </div>
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              You are in safe hands
+            </h2>
 
-  <div class="share-div text-center align-items-center mt-5 pt-lg-5 ">
-    <div class="col-lg-7 text-center m-auto pt-5">
-      <div class="share-content mb-lg-5 mb-3">
-        <h2 class="mb-4">Join the revolution</h2>
-        <div class="divider m-auto"></div>
-        <p class="font-18 mt-4 mb-4">Get paid for your investing skills. Disrupt Wall Street too.</p>
-      </div>
-      <a class="btn btn-primary btn-lg mb-4" href="https://betoken.fund/iao/">BECOME A FUND MANAGER</a>
-      <p>Already have Kairo tokens? <a href="https://betoken.fund/portal/" target="_blank">LAUNCH BETA</a></p>
-      <!--End mc_embed_signup-->
-      <div class="mt-lg-5 mb-lg-5 mt-5 mb-5">
-        <span class="bottom-social-wing">
-          <a class="circular-button d-inline-flex justify-content-center align-items-center mr-3 mb-3" href="https://t.me/betokenfund" target="_blank">
-            <i class="fa fa-telegram telegram"></i>
-          </a>
-          <a class="circular-button d-inline-flex justify-content-center align-items-center mr-3 mb-3" href="https://twitter.com/betokenfund" target="_blank">
-            <i class="fa fa-twitter twitter"></i>
-          </a>
-          <a class="circular-button d-inline-flex justify-content-center align-items-center mr-3 mb-3" href="https://www.facebook.com/betokenfund/" target="_blank">
-            <i class="fa fa-facebook facebook"></i>
-          </a>
-          <a class="circular-button d-inline-flex justify-content-center align-items-center mr-3 mb-3" href="https://www.reddit.com/r/betoken/" target="_blank">
-            <i class="fa fa-reddit reddit"></i>
-          </a>
-          <a class="circular-button d-inline-flex justify-content-center align-items-center mr-3 mb-3" href="https://medium.com/betoken" target="_blank">
-            <i class="fa fa-medium"></i>
-          </a>
-          <a class="circular-button d-inline-flex justify-content-center align-items-center mr-3 mb-3 bg-dark" href="https://github.com/Betoken" target="_blank">
-            <i class="fa fa-github gitHub"></i>
-          </a>
-        </span>
-      </div>
-    </div>
-  </div>
+            <!-- Text -->
+            <p class="display-4 text-center text-muted d-none d-lg-block">
+              Remain always in control of your funds. Built and audited by the best.
+            </p>
 
-  <div class="container mb-5">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="card" id="disclaimer">
-          <div class="card-body">
-            <h5 class="card-title">Disclaimer</h5>
-            <p class="card-text">* Past performance of Betoken's managers community is not necessarily indicative of future results, and there can be no assurance that any projections, targets or estimates of future performance will be realized.</p>
-            <a href="https://betoken.gitbook.io/betoken/" class="btn btn-primary" target="_blank">Check our FAQ</a>
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              You are in safe hands
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted d-block d-lg-none">
+              Remain always in control of your funds. Built and audited by the best.
+            </p>
+
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center mb-0 mb-lg-6">
+          <div class="col-12 col-lg-5">
+            <img class="d-block w-50 mx-auto mb-4" src="assets/img/illustrations/undraw_authentication_fsn5.svg" alt="undraw_authentication_fsn5" height="192">
+            <h3 class="h1">Non-custodial</h3>
+            <!-- Text -->
+            <p class="lead text-secondary">
+              Betoken is non-custodial. You always stay in control, it’s written on the blockchain. All user funds are locked in smart contracts without Betoken developers having any direct or indirect access to those funds.
+            </p>
+          </div>
+          <div class="col-12 col-lg-5 offset-lg-1">
+            <img class="d-block w-50 mx-auto mb-4" src="assets/img/illustrations/undraw_Security_on_s9ym.svg" alt="undraw_Security_on_s9ym" height="192">
+            <h3  class="h1">Tested and audited smart contracts</h3>
+            <!-- Text -->
+            <p class="lead text-secondary mb-4">
+              Betoken's smart contracts are currently being audited by <a href="https://solidified.io/" target="_blank">Solidified</a> and are designed so that no one can steal the collateral that backs the value of your deposit.
+            </p>
+          </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5 mb-lg-6">
+          <div class="col col-lg-8 col-xl-8">
+
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              Powered by open protocols
+            </h2>
+
+            <!-- Text -->
+            <p class="display-4 text-center text-muted d-none d-lg-block">
+              Betoken protocol uses the full value of the open finance ecosystem
+            </p>
+
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              Powered by open protocols
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted d-block d-lg-none">
+              Betoken protocol uses the full value of the open finance ecosystem
+            </p>
+
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center mt-6 mt-md-7">
+          <div class="col-12">
+            <div class="card-deck">
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0">
+
+                <div class="card-body text-center">
+
+                  <div class="avatar avatar-xl card-avatar card-avatar-top">
+                    <img class="border border-1 avatar-title rounded-circle" src="assets/img/illustrations/knc.svg">
+                  </div>
+
+                  <h2 class="card-title">
+                    <a href="https://kyber.network/" target="_blank">Kyber</a>
+                  </h2>
+
+                  <p class="card-text text-muted">
+                    An on-chain liquidity protocol that aggregates liquidity from a wide range of reserves, allowing betoken managers to trade instantly.
+                  </p>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0">
+
+                <div class="card-body text-center">
+
+                  <div class="avatar avatar-xl card-avatar card-avatar-top">
+                    <img class="border border-1 avatar-title rounded-circle" src="assets/img/illustrations/bzx.jpg">
+                  </div>
+
+                  <h2 class="card-title">
+                    <a href="https://b0x.network/" target="_blank">bZx</a>
+                  </h2>
+
+                  <p class="card-text text-muted">
+                    A financial primitive enabling margin trading with up to 4x leverage on Betoken.
+                  </p>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+              <div class="card mb-6 mb-lg-0">
+
+                <div class="card-body text-center">
+
+                  <div class="avatar avatar-xl card-avatar card-avatar-top">
+                    <img class="border border-1 avatar-title rounded-circle" src="assets/img/illustrations/maker.jpg">
+                  </div>
+
+                  <h2 class="card-title">
+                    <a href="https://makerdao.com" target="_blank">Maker</a>
+                  </h2>
+
+                  <p class="card-text text-muted">
+                    A decentralized autonomous organization (DAO) comprised of a decentralized stablecoin (Dai), collateral loans, and community governance. Betoken use Dai to handle its bookkeeping, and distribute profits and commissions to its users.
+                  </p>
+
+                </div>
+
+              </div>
+              <!-- Card -->
+              <div class="card">
+
+                <div class="card-body text-center">
+
+                  <div class="avatar avatar-xl card-avatar card-avatar-top">
+                    <img class="border border-1 avatar-title rounded-circle" src="assets/img/illustrations/compound.jpg">
+                  </div>
+
+                  <h2 class="card-title">
+                    <a href="https://compound.finance" target="_blank">Compound</a>
+                  </h2>
+
+                  <p class="card-text text-muted">
+                    A decentralized protocol which establishes money markets with algorithmically set interest rates based on supply and demand, allowing Betoken managers to perform margin trading with 1.5x leverage or better.
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center mb-5">
+          <div class="col col-lg-8 col-xl-8">
 
-  <footer class="d-lg-flex justify-content-between align-items-center container pb-lg-5">
-    <div class="footer-left d-none d-lg-block">
-      <img src="images/BetokenLogo.svg" class="logo">
-    </div>
-    <div class="footer-right">
-      <span class="bottom-nav-div d-lg-flex">
-        <a class="bottom-nav d-block pb-2" href="https://betoken.fund/manage-ja.html">JAPANESE</a>
-        <a class="bottom-nav d-block ml-lg-3 pb-2" href="mailto:hello@betoken.fund" target="_blank">HELLO@BETOKEN.FUND</a>
-        <a class="bottom-nav d-block ml-lg-3 pb-2" href="https://medium.com/betoken/making-of-a-meritocracy-an-overview-of-betoken-70e9641b1175" target="_blank">ABOUT</a>
-        <a class="bottom-nav d-block ml-lg-3 pb-2" href="https://betoken.gitbook.io/betoken/" target="_blank">FAQ</a>
-        <a class="bottom-nav d-block ml-lg-3 pb-2" href="https://github.com/Betoken/Whitepaper/" target="_blank">WHITEPAPER</a>
-        <a class="bottom-nav d-block ml-lg-3 pb-2" href="https://github.com/Betoken/documents/tree/master/Incentivized%20Meritocracies" target="_blank">INCENTIVIZED MERITOCRACY</a>
-      </span>
-    </div>
-  </footer>
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              Get Started in Minutes
+            </h2>
 
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/bootstrap.bundle.js"></script>
-  <script>
-    $('.carousel').carousel({
-      interval: 5000
-    });
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
-  <script src="js/performance-bundle.js"></script>
-  <script src="js/Chart.bundle.js"></script>
-  <script src="js/loadingoverlay.js"></script>
-  <script src="js/init.js"></script>
-</body>
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              Get Started in Minutes
+            </h2>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <div class="row">
+              <div class="col-auto">
+                <span class="display-1 text-light">1</span>
+              </div>
+              <div class="col">
+                <h3 class="h2 mb-2">Create an account</h3>
+                <p>Use any supported wallet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <div class="row">
+              <div class="col-auto">
+                <span class="display-1 text-light">2</span>
+              </div>
+              <div class="col">
+                <h3 class="h2 mb-2">Connect your capital...</h3>
+                <p>Let proven managers handle your crypto portfolio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="row">
+              <div class="col-auto">
+                <span class="display-1 text-light">3</span>
+              </div>
+              <div class="col">
+                <h3 class="h2 mb-2">...Or get paid to trade</h3>
+                <p>Earn commissions for making good investments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <a class="btn btn-success btn-lg" href="start.html">Get started</a>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center">
+          <div class="col col-lg-8 col-xl-8">
+
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              Funding
+            </h2>
+
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              Funding
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted mb-5">
+              Betoken is launched fairly — free of ICO or pre-minted tokens. We rely on donations to keep working on the project and launch on Mainnet.
+              If you’re an individual, company or institution excited about the potential of Betoken, we humbly ask if you’d consider making a financial contribution to the project’s development. We’re experimenting with a 100% community-driven funding model.
+            </p>
+            <p class="text-center">Support the movement by making a donation.</p>
+
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <a class="btn btn-lg btn-success text-center mb-3 mb-lg-0" href="funding.html">Donate to Betoken</a>
+            <a class="btn btn-lg btn-link text-center mb-3 mb-lg-0" href="friends.html">Friends of Betoken</a>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+      <div class="container mb-6 mb-lg-7" id="openMovement">
+        <div class="row justify-content-center mb-5">
+          <div class="col col-lg-8 col-xl-8">
+
+            <!-- Title -->
+            <h2 class="display-2 text-center d-none d-lg-block">
+              Join The Open Movement
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted d-none d-lg-block">
+              Betoken is an open project that believes in open source code and creative contribution from people with diverse interests and skill-sets. Dozens of people have contributed ideas, code, designs, and time to Betoken. Here are just a few of the faces from our <a href="https://t.me/betokenfund">English</a> and <a href="https://t.me/betokenJapanese">Japanese</a> chatroom.
+            </p>
+
+            <!-- Title -->
+            <h2 class="display-4 text-center d-block d-lg-none">
+              Join The Open Movement
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-center text-muted d-block d-lg-none">
+              Betoken is an open project that believes in open source code and creative contribution from people with diverse interests and skill-sets. Dozens of people have contributed ideas, code, designs, and time to Betoken. Here are just a few of the faces from our <a href="https://t.me/betokenfund">English</a> and <a href="https://t.me/betokenJapanese">Japanese</a> chatroom.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <!-- Avatar group -->
+            <div class="avatar-group">
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Sam">
+                <img src="assets/img/avatars/profiles/sam.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Aholder">
+                <img src="assets/img/avatars/profiles/aholder.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenJapanese" class="avatar" data-toggle="tooltip" title="" data-original-title="Kamikaze Tarou">
+                <span class="avatar-title bg-info rounded-circle">KT</span>
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Kyle Kistner">
+                <img src="assets/img/avatars/profiles/kyle-kistner.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Shane">
+                <img src="assets/img/avatars/profiles/shane.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Truebtclover">
+                <img src="assets/img/avatars/profiles/truebtclover.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Didyousaidbitcoin">
+                <img src="assets/img/avatars/profiles/didyousaidbitcoin.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenJapanese" class="avatar" data-toggle="tooltip" title="" data-original-title="To We">
+                <img src="assets/img/avatars/profiles/towe.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <!-- Avatar group -->
+            <div class="avatar-group">
+
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Guillaume">
+                <img src="assets/img/avatars/profiles/guillaume.jpg" alt="guillaume avatar" class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Zefram">
+                <img src="assets/img/avatars/profiles/zefram.jpg" alt="zefram avatar" class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenJapanese" class="avatar" data-toggle="tooltip" title="" data-original-title="Cryptochick">
+                <img src="assets/img/avatars/profiles/cryptochick.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Adam">
+                <img src="assets/img/avatars/profiles/adam.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Evolve">
+                <img src="assets/img/avatars/profiles/evolve.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Garima">
+                <img src="assets/img/avatars/profiles/garima.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenJapanese" class="avatar" data-toggle="tooltip" title="" data-original-title="Tomo Kaya">
+                <span class="avatar-title bg-success rounded-circle">TK</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <!-- Avatar group -->
+            <div class="avatar-group">
+              <a href="https://t.me/betokenJapanese" class="avatar" data-toggle="tooltip" title="" data-original-title="Kazuhiko Kommoto">
+                <span class="avatar-title bg-danger rounded-circle">KK</span>
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Innovative bear">
+                <img src="assets/img/avatars/profiles/innovative-bear.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenJapanese" class="avatar" data-toggle="tooltip" title="" data-original-title="Taisuke Hory">
+                <img src="assets/img/avatars/profiles/taisuke-hory.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenJapanese" class="avatar" data-toggle="tooltip" title="" data-original-title="m4d">
+                <img src="assets/img/avatars/profiles/m4d.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+              <a href="https://t.me/betokenfund" class="avatar" data-toggle="tooltip" title="" data-original-title="Surya Krishnan">
+                <span class="avatar-title bg-danger rounded-circle">SK</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </div> <!-- / .main-content -->
+    <div class="main-container bg-dark-gradient">
+      <div class="container py-5 py-lg-6">
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+            <img class="d-block mb-4" src="assets/img/logo.svg" alt="..." width="64">
+            <p class="text-secondary">Don't trust our words, trust our code. The Betoken protocol is available on <a class="text-white" href="https://github.com/Betoken/" target="_blank">Github</a>.</p>
+          </div>
+          <div class="col-12 col-lg-3 offset-lg-3 mb-5 mb-lg-0">
+            <h4 class="text-white">Join our community</h4>
+            <div class="list-group list-group-flush">
+              <a class="list-group-item text-white border-0 pl-0" href="https://twitter.com/betokenfund" target="_blank">Twitter</a>
+              <a class="list-group-item text-white border-0 pl-0" href="https://t.me/betokenfund" target="_blank">Telegram</a>
+              <a class="list-group-item text-white border-0 pl-0" href="https://medium.com/betoken" target="_blank">Medium</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h4 class="text-white mb-4">Subscribe to the Betoken Report</h4>
+            <form action="https://fund.us17.list-manage.com/subscribe/post?u=9c0647dcb587985ed6121cdf6&amp;id=150e0f091e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate w-100" target="_blank" novalidate>
+              <div class="input-group input-group-lg mb-3">
+                <input class="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="myemail@address.com" required>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9c0647dcb587985ed6121cdf6_150e0f091e" tabindex="-1" value=""></div>
+                <div class="input-group-append">
+                  <button class="btn btn-success border-0" name="subscribe" id="mc-embedded-subscribe">
+                      <span class="fe fe-send"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <a class="text-white" href="https://app.gitbook.com/@betoken/" target="_blank">Get help<i class="fe fe-arrow-right ml-2"></i></a>
+            <!--End mc_embed_signup-->
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="card card-inactive mb-0">
+              <div class="card-body">
+                <h3 class="text-white">Disclaimer</h3>
+                <p class="text-muted">
+                  Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
+                </p>
+                <p class="text-muted">
+                  Betoken enables capital connection and managing using smart contracts which are open source. Betoken does not take custody of tokens and is only a collaborative hub for investors and managers. Betoken is not a licensed bank, broker-dealer, investment advisor or an exchange. Betoken uses partner protocols (Kyber, Compound, bZx, Maker DAO) to power its own ecosystem.
+                </p>
+                <p class="text-danger">
+                  💀 This project is in beta. Use at your own risk.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .main-container -->
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/list.js/dist/list.min.js"></script>
+    <script src="assets/libs/quill/dist/quill.min.js"></script>
+    <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+    <script async src='https://widget.kyber.network/v0.6.4/widget.js'></script>
+    <script src="assets/libs/performance-bundle.js"></script>
+    <script src="assets/libs/init.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+
+  </body>
 </html>

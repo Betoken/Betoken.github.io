@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Start | Connect your capital or become a fund manager"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@include("partials/topnav-start.html")
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content">
+      <!-- CARDS -->
+      <div class="container mt-n6 mb-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="card-deck">
+              <!-- Card -->
+              <div class="card border-0 bg-primary mb-6 mb-lg-0">
+                <div class="card-body pb-0">
+                  <img class="d-block mt-n6 w-75 mx-auto mb-4" src="assets/img/illustrations/undraw_transfer_money_rywa.svg" alt="" height="200">
+                  <h1 class="display-4 text-white">Connect your capital</h1>
+                  <p class="text-white mb-4 lead">Connect your capital with Betoken's fund managers.</p>
+
+                </div>
+                <div class="card-footer border-0 d-flex align-items-center justify-content-end">
+                  <form action="https://fund.us17.list-manage.com/subscribe/post?u=9c0647dcb587985ed6121cdf6&amp;id=150e0f091e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate w-100" target="_blank" novalidate>
+                    <label for="mce-EMAIL" class="text-light">Coming soon. Get updated:</label>
+                    <div class="input-group input-group-lg mb-3">
+                      <input class="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="myemail@address.com" required>
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9c0647dcb587985ed6121cdf6_150e0f091e" tabindex="-1" value=""></div>
+                      <div class="input-group-append">
+                        <button class="btn btn-dark border-0" name="subscribe" id="mc-embedded-subscribe">
+                            <span class="fe fe-send"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- Card -->
+              <a class="card border-0 bg-success" href="https://betoken.fund/iao/">
+                <div class="card-body pb-0">
+                  <img class="d-block mt-n6 w-75 mx-auto mb-4" src="assets/img/illustrations/skill.svg" alt="" height="200">
+                  <h1 class="display-4 text-white">Start managing</h1>
+                  <p class="text-white mb-0 lead">Be financially rewarded based on your talent and contributions as a fund manager.</p>
+                </div>
+                <div class="card-footer border-0 d-flex align-items-center justify-content-end">
+                  <p class="text-white font-weight-bold text-right mb-0">Manage</p><i class="fe fe-chevron-right text-white h1 mb-0"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .main-content -->
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
