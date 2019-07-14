@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.no = {}));
+  (global = global || self, factory(global.bs = {}));
 }(this, function (exports) { 'use strict';
 
   var fp = typeof window !== "undefined" && window.flatpickr !== undefined
@@ -9,17 +9,18 @@
       : {
           l10ns: {}
       };
-  var Norwegian = {
+  var Bosnian = {
+      firstDayOfWeek: 1,
       weekdays: {
-          shorthand: ["Søn", "Man", "Tir", "Ons", "Tor", "Fre", "Lør"],
+          shorthand: ["Ned", "Pon", "Uto", "Sri", "Čet", "Pet", "Sub"],
           longhand: [
-              "Søndag",
-              "Mandag",
-              "Tirsdag",
-              "Onsdag",
-              "Torsdag",
-              "Fredag",
-              "Lørdag",
+              "Nedjelja",
+              "Ponedjeljak",
+              "Utorak",
+              "Srijeda",
+              "Četvrtak",
+              "Petak",
+              "Subota",
           ]
       },
       months: {
@@ -28,45 +29,37 @@
               "Feb",
               "Mar",
               "Apr",
-              "Mai",
+              "Maj",
               "Jun",
               "Jul",
-              "Aug",
+              "Avg",
               "Sep",
               "Okt",
               "Nov",
-              "Des",
+              "Dec",
           ],
           longhand: [
               "Januar",
               "Februar",
-              "Mars",
+              "Mart",
               "April",
-              "Mai",
+              "Maj",
               "Juni",
               "Juli",
               "August",
-              "September",
-              "Oktober",
-              "November",
-              "Desember",
+              "Septembar",
+              "Oktobar",
+              "Novembar",
+              "Decembar",
           ]
       },
-      firstDayOfWeek: 1,
-      rangeSeparator: " til ",
-      weekAbbreviation: "Uke",
-      scrollTitle: "Scroll for å endre",
-      toggleTitle: "Klikk for å veksle",
-      time_24hr: true,
-      ordinal: function () {
-          return ".";
-      }
+      time_24hr: true
   };
-  fp.l10ns.no = Norwegian;
-  var no = fp.l10ns;
+  fp.l10ns.bs = Bosnian;
+  var bs = fp.l10ns;
 
-  exports.Norwegian = Norwegian;
-  exports.default = no;
+  exports.Bosnian = Bosnian;
+  exports.default = bs;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
